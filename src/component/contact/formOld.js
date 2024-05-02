@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {useState} from "react";
 import { Form, Col, Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from 'react-google-recaptcha';
 import "./form.css";
 
 const SERVICE_ID = "service_p920ico";
@@ -8,21 +9,9 @@ const TEMPLATE_ID = "template_i5pi6qu";
 const PUBLIC_KEY = "rq898-0ALb3WReHI3";
 
 export const FormFields = (props) => {
-    const recaptchaRef = useRef();
     const [recaptchaResponse, setRecaptchaResponse] = useState(null);
     const [formData, setFormData] = useState({ name: '', email: '', message:''});
     const [formErrors, setFormErrors] = useState({ name: null, email: null, message: null });
-
-    useEffect(() => {
-        if (window.grecaptcha) {
-            window.grecaptcha.render(recaptchaRef.current, {
-                sitekey: "6Ld8gXwkAAAAAJxfcv1ZTb1JVp2NQTigfbvqlakH",
-                callback: (response) => {
-                    setRecaptchaResponse(response);
-                }
-            });
-        }
-    }, []);
 
     const validateForm = () => {
         let isValid = true;
@@ -59,10 +48,10 @@ export const FormFields = (props) => {
             return;
         }
             
-        if (!validateForm()) {
-            alert("Please correct the errors in the form");
-            return;
-        }
+            if (!validateForm()) {
+                alert("Please correct the errors in the form");
+                return;
+            }
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
             .then((result) => {
@@ -75,10 +64,13 @@ export const FormFields = (props) => {
         e.target.reset();
     };
 
+    const handleCaptchaResponseChange = (response) => {
+        setRecaptchaResponse(response);
+    };
+
     const handleOnChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-
     return (
         <Form
             className="formContainer"
@@ -133,7 +125,8 @@ export const FormFields = (props) => {
                 </Form.Control.Feedback>
             </Form.Group>
 
-            <div ref={recaptchaRef}></div>
+            <ReCAPTCHA
+            sitekey="6Ld8gXwkAAAAAJxfcv1ZTb1JVp2NQTigfbvqlakH" onChange={handleCaptchaResponseChange} />
 
             <div className="formButtonContainer">
                 <Button className="formButton" type="submit">
@@ -141,5 +134,7 @@ export const FormFields = (props) => {
                 </Button>
             </div>
         </Form >
+
     );
 };
+
