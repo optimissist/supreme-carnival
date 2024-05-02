@@ -15,7 +15,7 @@ export default function PortfolioItem6() {
     return (
         <>
             <Button variant="primary" onClick={handleShow} className="lightBoxButton">
-                <img src={Jpg} className="lightBoxButtonImg lightBoxMargin" /><br/>Jamming - Spotify Client
+                <img src={Jpg} className="lightBoxButtonImg lightBoxMargin img-fluid" /><br/>Jamming - Spotify Client
             </Button>
 
             <Modal show={show} onHide={handleClose} dialogClassName="modal90w">
@@ -24,7 +24,7 @@ export default function PortfolioItem6() {
                 </Modal.Header>
 
                 <Modal.Body>
-                    <img src={Png} className="lightBoxImage" />
+                    <img src={Png} className="lightBoxImage img-fluid" />
                     <p className="lightBoxCopy">I worked on this project during the React, Part II section of the Codecademy Front-End Engineering course. This project was built with JSX, CSS, JavaScript and React and uses the Spotify API.</p>
                     <p className="lightBoxLinks"> <a href="https://github.com/optimissist/jamming" target="_blank" rel="noreferrer">View on GitHub</a> | <a href="https://jammingmss.surge.sh/" target="_blank" rel="noreferrer">View Project</a></p>
                 </Modal.Body>

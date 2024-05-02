@@ -13,15 +13,31 @@ export const FormFields = (props) => {
     const [formData, setFormData] = useState({ name: '', email: '', message:''});
     const [formErrors, setFormErrors] = useState({ name: null, email: null, message: null });
 
+    // useEffect(() => {
+    //     if (window.grecaptcha) {
+    //         window.grecaptcha.render(recaptchaRef.current, {
+    //             sitekey: "6Ld8gXwkAAAAAJxfcv1ZTb1JVp2NQTigfbvqlakH",
+    //             callback: (response) => {
+    //                 setRecaptchaResponse(response);
+    //             }
+    //         });
+    //     }
+    // }, []);
+
     useEffect(() => {
-        if (window.grecaptcha) {
-            window.grecaptcha.render(recaptchaRef.current, {
-                sitekey: "6Ld8gXwkAAAAAJxfcv1ZTb1JVp2NQTigfbvqlakH",
-                callback: (response) => {
-                    setRecaptchaResponse(response);
-                }
-            });
-        }
+        const interval = setInterval(() => {
+            if (window.grecaptcha) {
+                window.grecaptcha.render(recaptchaRef.current, {
+                    sitekey: "6Ld8gXwkAAAAAJxfcv1ZTb1JVp2NQTigfbvqlakH",
+                    callback: (response) => {
+                        setRecaptchaResponse(response);
+                    }
+                });
+                clearInterval(interval);
+            }
+        }, 100);
+    
+        return () => clearInterval(interval); // Clean up on unmount
     }, []);
 
     const validateForm = () => {

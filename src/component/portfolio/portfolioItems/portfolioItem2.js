@@ -15,7 +15,7 @@ export default function PortfolioItem2() {
     return (
         <>
             <Button variant="primary" onClick={handleShow} className="lightBoxButton">
-                <img src={Jpg} className="lightBoxButtonImg" /><br/>645 Commitment
+                <img src={Jpg} className="lightBoxButtonImg img-fluid" /><br/>645 Commitment
             </Button>
 
             <Modal show={show} onHide={handleClose} dialogClassName="modal90w">
@@ -24,7 +24,7 @@ export default function PortfolioItem2() {
                 </Modal.Header>
 
                 <Modal.Body>
-                    <img src={Png} className="lightBoxImage" />
+                    <img src={Png} className="lightBoxImage img-fluid" />
                     <p className="lightBoxCopy">I was asked to build a standalone page to outline the 645 Commitment reward program when the 645 program launched. This page was custom designed and built from provided proof. I built the page using Endeca, WCS and Atom with HTML and CSS.</p>
                     <p className="lightBoxLinks"><a href="https://github.com/optimissist/TBB-Portfolio/tree/main/645%20Commitment" target="_blank" rel="noreferrer">View on GitHub</a></p>
                 </Modal.Body>

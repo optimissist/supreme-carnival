@@ -15,7 +15,7 @@ export default function PortfolioItem5() {
     return (
         <>
             <Button variant="primary" onClick={handleShow} className="lightBoxButton">
-                <img src={Jpg} className="lightBoxButtonImg lightBoxMargin" /><br/>Ravenous Yelp App
+                <img src={Jpg} className="lightBoxButtonImg lightBoxMargin img-fluid" /><br/>Ravenous Yelp App
             </Button>
 
             <Modal show={show} onHide={handleClose} dialogClassName="modal90w">
@@ -24,7 +24,7 @@ export default function PortfolioItem5() {
                 </Modal.Header>
 
                 <Modal.Body>
-                    <img src={Png} className="lightBoxImage" />
+                    <img src={Png} className="lightBoxImage img-fluid" />
                     <p className="lightBoxCopy">This project was created for the Create a front-end app with React course with Codecademy. It was built with JSX, CSS, JavaScript and React and uses the Yelp API. </p>
                     <p className="lightBoxLinks"> <a href="https://github.com/optimissist/RavenousProject" target="_blank" rel="noreferrer">View on GitHub</a> |  <a href="https://ravenousms.surge.sh/" target="_blank" rel="noreferrer">View Project</a></p>
                 </Modal.Body>
