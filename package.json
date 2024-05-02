@@ -1,0 +1,36 @@
+{
+  "name": "portfolio",
+  "version": "2.4.5",
+  "description": "This is Marla's Resume and Portfolio. Built using VS Code, Parcel, Express, Node.js, and some coding languages.",
+  "source": "server.js",
+  "scripts": {
+    "dev": "parcel public/index.html --open",
+    "start": "nodemon node server.js",
+    "build": "parcel build public/index.html --public-url ./"
+  },
+  "author": "Marla Schevker",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.3.3",
+    "express": "^4.17.2",
+    "jquery": "^3.7.1",
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.3.1",
+    "react-google-recaptcha": "^3.1.0",
+    "react-icons": "^5.2.0",
+    "react-router": "^6.23.0",
+    "react-router-dom": "^6.23.0",
+    "react-tooltip": "^5.26.4",
+    "reactjs-popup": "^2.0.6",
+    "sweetalert2": "^11.10.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "popper.js": "^1.16.1",
+    "process": "^0.11.10"
+  }
+}

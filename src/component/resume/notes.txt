@@ -1,0 +1,19 @@
+const contents = ["JavaScript - 3 years", "React - 2 years", "Git - 1 years", "jQuery - 8 years", "JSON - 3 years", "HTML - 12 years", "CSS - 12 years", "SalesForce Commerce Cloud - 1 year", "SalesForce Marketing Cloud - 1 year", "BCC - 4 years" "WCS - 4 years", "Endeca - 4 years", "Contentful - 2 years", "Wordpress - 5 years", "Amplience - 1 year"];
+
+
+            <Tooltip anchorSelect="#\:r0\:JavaScript" place="bottom" content="JavaScript - 3 years" />
+            <Tooltip anchorSelect="#\:r0\:React" place="bottom" content="React - 2 years" />
+            <Tooltip anchorSelect="#\:r0\:Git" place="bottom" content="Git - 1 years" />
+            <Tooltip anchorSelect="#\:r0\:jQuery" place="bottom" content="jQuery - 8 years" />
+            <Tooltip anchorSelect="#\:r0\:JSON" place="bottom" content="JSON - 3 years" />
+            <Tooltip anchorSelect="#\:r0\:HTML" place="bottom" content="HTML - 12 years" />
+            <Tooltip anchorSelect="#\:r0\:CSS" place="bottom" content="CSS - 12 years" />
+            <Tooltip anchorSelect="#\:r0\:SFCC" place="bottom" content="SalesForce Commerce Cloud - 1 year" />
+            <Tooltip anchorSelect="#\:r0\:SFMC" place="bottom" content="SalesForce Marketing Cloud - 1 year" />
+            <Tooltip anchorSelect="#\:r0\:BCC" place="bottom" content="BCC - 4 years" />
+            <Tooltip anchorSelect="#\:r0\:WCS" place="bottom" content="WCS - 4 years" />
+            <Tooltip anchorSelect="#\:r0\:Endeca" place="bottom" content="Endeca - 4 years" />
+            <Tooltip anchorSelect="#\:r0\:Contentful" place="bottom" content="Contentful - 2 years" />
+            <Tooltip anchorSelect="#\:r0\:Wordpress" place="bottom" content="Wordpress - 5 years" />
+            <Tooltip anchorSelect="#\:r0\:Amplience" place="bottom" content="Amplience - 1 year" />
+ 

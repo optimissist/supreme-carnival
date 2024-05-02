@@ -1,0 +1,47 @@
+.formContainer {
+    width: 75%;
+    margin: 2rem auto;
+    background-color: var(--black);
+    padding: 0.5rem 1rem;
+    color: var(--grey);
+    border-radius: .5rem;
+}
+
+.form-control {
+    background-color: var(--black) !important;
+    color: var(--grey) !important;
+}
+
+input#formGridName,
+input#formGridEmail,
+textarea.form-control {
+    border-color: var(--blue);
+    font-style: italic;
+}
+
+input#formGridName::placeholder,
+input#formGridEmail::placeholder,
+textarea.form-control::placeholder {
+    color: var(--grey);
+}
+
+.formRow {
+    margin: 1rem 0;
+}
+
+.formButtonContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.formButton {
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+    margin: 0.75rem auto !important;
+}
+
+.btn:hover {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+    font-weight: 500;
+}

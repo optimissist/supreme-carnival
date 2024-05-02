@@ -1,0 +1,23 @@
+.skillsList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills {
+    padding: 0.5rem;
+}
+
+.react-tooltip {
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+    padding: 8px 9px !important;
+    border-radius: 10px !important;
+}
+
+@media all and (max-width: 500px) {
+    .skillsList {
+        justify-content: left;
+    }
+}

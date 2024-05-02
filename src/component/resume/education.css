@@ -1,0 +1,18 @@
+.educationList {
+    list-style-type: none;
+}
+
+.educationItem {
+    border-bottom: 2px dashed var(--blue)
+}
+
+.educationItem a {
+    color: #000;
+    text-decoration: none;
+}
+
+@media all and (max-width: 500px) {
+    .educationList {
+        margin-right: 2rem;
+    }
+}

@@ -1,0 +1,103 @@
+.result-button {
+  width: 100px;
+  height: 28px;
+  padding: 10px;
+  color: #223a5f;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border-style: none;
+}
+
+
+.gameViewContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.gameButton {
+  padding: 1rem;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+}
+
+.gameImg {
+  width: 100px;
+  height: 100px;
+}
+
+
+.resultImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+  padding: 1rem;
+}
+
+.resultName {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.resultText {
+  color: var(--white);
+  font-size: 25px;
+}
+
+
+@media (max-width: 945px) {
+  .gameImg {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gameViewContainer {
+    width: 250px;
+    height: 250px;
+    margin-left: 15px;
+    margin-top: 0;
+  }
+
+  .gameButton {
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+
+  .gameImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .resultImageContainer {
+    width: 30%;
+  }
+
+  .resultName {
+    font-size: 14px;
+  }
+
+  .resultText {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 415px) {
+  .gameImg {
+    width: 80px;
+    height: 80px;
+  }
+}

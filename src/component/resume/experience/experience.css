@@ -1,0 +1,9 @@
+li.detailList {
+    list-style-type: disc;
+}
+
+/* #torrid, #tbb {
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 3px groove var(--blue);
+} */

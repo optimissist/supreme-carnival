@@ -1,0 +1,56 @@
+.lightBoxButton {
+    margin: 0.5rem.25rem;
+    background-color: var(--blue) !important;
+    color: var(--black) !important;
+    font-weight: 400 !important;
+}
+
+.lightBoxButtonImg {
+    width: 90%;
+    height: auto;
+    padding: 0.5rem 0;
+}
+
+.modal90w {
+    max-width: none !important;
+    width: 90% !important;
+}
+
+.lightBoxMargin {
+    margin-bottom: 0.6rem;
+}
+
+.lightBoxImage {
+    width: 75%;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    display: flex;
+}
+
+.modal-title.h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.lightBoxCopy, .lightBoxLinks {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.lightBoxLinks {
+    padding: 1.5rem !important;
+}
+
+.lightBoxLinks a {
+    text-decoration: none;
+    color: var(--black);
+    border-bottom: 2px dotted var(--blue);
+}
+
+.lightBoxClose {
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+}

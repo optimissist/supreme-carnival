@@ -1,0 +1,84 @@
+.scoreContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 60%;
+  border-style: solid;
+  border-color: var(--white);
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-top: 2%;
+}
+
+.scoreNameContainer {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto; */
+}
+
+.scoreName {
+  color: var(--black);
+  font-size: 2rem;
+
+}
+
+@media screen and (max-width: 576px) {
+  .scoreName {
+    font-size: 1rem;
+  }
+}
+
+.scoreBoard {
+  background-color: var(--white);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.scoreHeading {
+  color: var(--black);
+  font-size: 1.5rem;
+  margin-bottom: -1rem;
+}
+
+.scoreResult {
+  color: var(--black);
+  font-size: 3rem;
+}
+
+p {
+  margin-bottom: 0rem;
+}
+
+.colorBreaker {
+  color: var(--white);
+}
+
+@media (max-width: 576px) {
+  .scoreName {
+    font-size: 1rem;
+  }
+
+  .scoreContainer {
+    width: 100%;
+    padding: 6px;
+  }
+
+  .scoreBoard {
+    width: 25%;
+    height: 3.5rem;
+  }
+
+  .scoreHeading {
+    font-size: 1rem;
+  }
+
+  .scoreResult {
+    font-size: 1.5rem;
+    margin-top: .75rem;
+  }
+}
