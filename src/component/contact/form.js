@@ -13,17 +13,6 @@ export const FormFields = (props) => {
     const [formData, setFormData] = useState({ name: '', email: '', message:''});
     const [formErrors, setFormErrors] = useState({ name: null, email: null, message: null });
 
-    // useEffect(() => {
-    //     if (window.grecaptcha) {
-    //         window.grecaptcha.render(recaptchaRef.current, {
-    //             sitekey: "6Ld8gXwkAAAAAJxfcv1ZTb1JVp2NQTigfbvqlakH",
-    //             callback: (response) => {
-    //                 setRecaptchaResponse(response);
-    //             }
-    //         });
-    //     }
-    // }, []);
-
     useEffect(() => {
         const interval = setInterval(() => {
             if (window.grecaptcha) {
